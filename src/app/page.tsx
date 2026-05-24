@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getAuthorForDate } from "@/lib/authors";
 import { AdRotator } from "@/components/ad-rotator";
 import Image from "next/image";
+import { Hero } from "@/components/hero";
+import "@/components/hero.css";
 
 const allGames: Game[] = [
   {
@@ -91,15 +93,7 @@ export default function Home() {
 
   return (
     <div className="bg-background overflow-x-hidden">
-      <div className="relative h-[40vh] md:h-screen w-full mt-20 md:mt-0 overflow-hidden">
-        <Image
-          src="https://firebasestorage.googleapis.com/v0/b/studio-1462723797-876f0.firebasestorage.app/o/WhatsApp%20Image%202026-01-29%20at%205.08.57%20PM.jpeg?alt=media&token=de450394-2223-49c7-ab05-f5b555f503fd"
-          alt="21 Games Hero"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-      </div>
+      <Hero />
 
       <div className="pt-4 pb-2 text-center">
         <div className="my-2">
