@@ -1,7 +1,7 @@
 import { GameCard, Game } from "@/components/game-card";
 import Link from "next/link";
 import { getAuthorForDate } from "@/lib/authors";
-import { AdRotator } from "@/components/ad-rotator";
+
 import Image from "next/image";
 import { Hero } from "@/components/hero";
 import "@/components/hero.css";
@@ -95,12 +95,7 @@ export default function Home() {
     <div className="bg-background overflow-x-hidden">
       <Hero />
 
-      <div className="pt-4 pb-2 text-center">
-        <div className="my-2">
-          <AdRotator />
-        </div>
-        <p className="text-sm italic text-muted-foreground">Our featured partners</p>
-      </div>
+
 
       <header className="bg-[#b3a8ff] py-12 lg:py-24 px-4">
         <div className="mx-auto max-w-7xl flex flex-col lg:flex-row justify-center items-center gap-6">
